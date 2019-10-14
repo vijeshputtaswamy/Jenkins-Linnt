@@ -22,7 +22,7 @@ pipeline {
                 
                 withAWS(credentials:'jenkins-pipeline-aws') {
                     // do something
-                    s3Upload(bucket:"udacity-project-3-site", file:'index.html')
+                    s3Upload(bucket:"jenkins-awscodepipeline", file:'index.html')
                 }
             }
         }        
