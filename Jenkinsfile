@@ -20,7 +20,7 @@ pipeline {
         stage ('Upload to AWS') {
             steps {
                 
-                withAWS(credentials:'jenkins-pipeline-aws') {
+                withAWS(credentials:'vputtaswamy') {
                     // do something
                     s3Upload(bucket:"jenkins-awscodepipeline", file:'index.html')
                 }
